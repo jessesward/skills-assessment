@@ -1,0 +1,127 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap";
+html {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 5rem 0;
+}
+.contact-list-container * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.contact-list-inner {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: none;
+}
+.overlay.expanded {
+  display: block;
+}
+.contact-list-container {
+  border-radius: 10px;
+  box-shadow: 0 6px 8px -3px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.contact-list-header {
+  background: black;
+  background: linear-gradient(0deg, rgba(26, 26, 26, 1) 0%, rgba(33, 33, 33, 1) 45%, rgba(58, 58, 58, 1) 100%);
+  color: white;
+  padding: 1rem;
+}
+.contact-list-header h2 {
+  font-size: 1.3rem;
+}
+.contact-row {
+  font-size: 0.8rem;
+  background-color: #212121;
+  border-top: 3px solid black;
+  color: white;
+  position: relative;
+  padding: 0 1rem;
+}
+.contact-row:nth-child(even) {
+  background-color: #1a1a1a;
+}
+.contact-row.expanded {
+  background-color: #484848;
+  z-index: 1;
+}
+.contact-row.expanded .contact-expand {
+  display: block;
+}
+.contact-expand {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc((100% / 3) * 2);
+  z-index: 1;
+  background-color: #484848;
+  padding: 0.7rem 1rem;
+  display: none;
+}
+.contact-row.expanded:nth-last-of-type(-n + 2) .contact-expand {
+  top: auto;
+  bottom: 0;
+}
+.contact-expand span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.contact-expand a {
+  color: #04edf6;
+}
+.contact-info {
+  color: #3a3a3a;
+  padding-left: 1rem;
+}
+.contact-status {
+  border-radius: 100%;
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+}
+.contact-status.available {
+  background-color: #00ff1e;
+}
+.contact-status.idle {
+  background-color: #c3c118;
+}
+.contact-status.away {
+  background-color: #ff0000;
+}
+.contact-name {
+  border-right: 1px solid black;
+  display: inline-block;
+  padding: 0.7rem 0;
+  width: calc(100% / 3);
+}
+.contact-email {
+  display: none;
+}
+.contact-list-footer {
+  background-color: #212121;
+  padding: 1rem;
+  box-shadow: 0 -5px 5px -3px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+.contact-list-footer select {
+  display: block;
+  margin: 0 0 0 auto;
+  padding: 0.1rem 0;
+  font-size: 1rem;
+}

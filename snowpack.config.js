@@ -2,7 +2,7 @@
 module.exports = {
   mount: {
     // "src/assets/js": { url: "/js" },
-    // src: { url: "/src" },
+    'src': { url: "/" },
   },
 
   plugins: [
@@ -16,7 +16,7 @@ module.exports = {
   optimize: {
     /* Example: Bundle your final build: */
     // bundle: true,
-    entrypoints: ["./index.html"],
+    entrypoints: ["./src/index.html"],
   },
   packageOptions: {
     polyfillNode: true,

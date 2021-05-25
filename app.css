@@ -41,6 +41,10 @@ html {
   right: 0;
   bottom: 0;
   z-index: 1;
+  display: none;
+}
+.overlay.expanded {
+  display: block;
 }
 
 .contact-list-container {

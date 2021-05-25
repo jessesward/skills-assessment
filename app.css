@@ -29,6 +29,10 @@ html {
   padding: 0;
 }
 
+#contact-list {
+  overflow-y: scroll;
+}
+
 .contact-list-inner {
   position: relative;
 }
@@ -135,7 +139,7 @@ html {
 .contact-name {
   border-right: 1px solid black;
   display: inline-block;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 0;
   width: calc(100% / 3);
 }
 
@@ -149,10 +153,13 @@ html {
   box-shadow: 0 -5px 5px -3px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 1;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
 }
 
 .contact-list-footer select {
   display: block;
   margin: 0 0 0 auto;
   padding: 0.1rem 0;
+  font-size: 1rem;
 }

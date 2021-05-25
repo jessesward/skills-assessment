@@ -12,13 +12,13 @@ contacts.forEach((contact) => {
 /**
  * Handle Events
  */
-// Add the click logic to add or remove classes that will expand or collapse contact info
+// Add the click logic to add classes that will expand the contact info
 const contactRows = document.querySelectorAll(".contact-row")
 const overlay = document.querySelector(".contact-list-inner .overlay")
 contactRows.forEach((row) => {
   row.addEventListener("click", function () {
-    this.classList.toggle("expanded")
-    overlay.classList.toggle("expanded")
+    this.classList.add("expanded")
+    overlay.classList.add("expanded")
   })
 })
 

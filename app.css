@@ -29,10 +29,6 @@ html {
   padding: 0;
 }
 
-#contact-list {
-  overflow-y: scroll;
-}
-
 .contact-list-inner {
   position: relative;
 }
@@ -105,6 +101,10 @@ html {
   background-color: #484848;
   padding: 0.7rem 1rem;
   display: none;
+}
+.contact-row.expanded:nth-last-of-type(-n + 2) .contact-expand {
+  top: auto;
+  bottom: 0;
 }
 .contact-expand span {
   display: block;

@@ -7,13 +7,12 @@ const contactRow = (contact) =>
         </div>
         <span class="contact-info">${contact.email}</span>
         <div class="contact-expand">
-            <span class=""
-            ><a href="mailto:${contact.email}"
-                >${contact.email}</a
-            ></span
-            >
-            <span class="">${contact.phone}</span>
-            <span class="">${contact.address} <br />${contact.city} ${contact.state} ${contact.zip}</span>
+            <span><a href="mailto:${contact.email}">${contact.email}</a></span>
+            <span>${contact.phone}</span>
+            <span>
+                ${contact.address}<br />
+                ${contact.city} ${contact.state} ${contact.zip}
+            </span>
         </div>
     </div>
     `

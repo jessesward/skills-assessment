@@ -1,5 +1,5 @@
 const contactRow = (contact) => `
-    <div class="contact-row">
+    <div class="contact-row" tabindex="0">
         <div class="contact-name">
             <span class="contact-status ${contact.status}"></span>
             <span>${contact.firstName}</span>

@@ -1,3 +1,6 @@
+/**
+ * Ideally these would come from some API or database
+ */
 const contacts = [
   {
     firstName: "Christian",

@@ -12,3 +12,8 @@ Bonuses: Keep it simple, don't overuse JavaScript.  Prioritize modern browsers -
 * [Contact List PSD](https://github.com/14four/skills-assessment/blob/master/contactListUpdated.psd?raw=true) (right click and save)
 
 ![Screen](https://github.com/14four/skills-assessment/raw/master/contactListUpdated.jpg)
+
+## My Solution
+I assumed that the contact information would be fed from some API or database, and populated with javascript.  This removes the dependency on a particular templating engine.  Downside is if JS isn't enabled on a browser, you're not going to see anything.
+
+I built the widget using modern JS with modules, but with a compiler (I used Snowpack), it works back to IE10.  Normally I would have used CSS3 variables as well, but those aren't supported in IE11 so I just hard-coded the colors/sizes.
